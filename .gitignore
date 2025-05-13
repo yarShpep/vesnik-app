@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Nuxt / Node / Vue
+node_modules/
+dist/
+.nuxt/
+.vite/
+.output
+.data
+.nitro
+.cache
+
+# IDE / tooling
+.vscode/
+.idea/
+.fleet/
+
+# Logs
+logs/
+*.log
+output.log
+
+# Local
+.DS_Store
+
+# Env
+.env
+.env.*
+!.env.example
+.vercel
