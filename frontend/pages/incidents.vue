@@ -25,6 +25,11 @@
       <template #item.chairman="{ item }">
         {{ item.chairman }}
       </template>
+      <template #item.actions="{ item }">
+        <v-btn color="primary" :to="`/incident/${item.id}`" size="small">
+          Подробнее
+        </v-btn>
+      </template>
     </v-data-table>
 
     <v-row v-else dense>
@@ -38,6 +43,9 @@
             <p><strong>Регион:</strong> {{ item.region }}, {{ item.district }}, {{ item.city }}</p>
             <p><strong>Председатель:</strong> {{ item.chairman }}</p>
           </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" :to="`/incidents/${item.id}`">Подробнее</v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -60,6 +68,7 @@ const headers = [
   { title: 'Тип происшествия', value: 'incident_type' },
   { title: 'Регион', value: 'region' },
   { title: 'Председатель', value: 'chairman' },
+  { title: '', value: 'actions', sortable: false },
 ]
 
 onMounted(async () => {

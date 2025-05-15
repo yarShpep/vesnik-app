@@ -34,3 +34,4 @@ output.log
 .env.*
 !.env.example
 .vercel
+nuxt.config.ts

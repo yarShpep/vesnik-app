@@ -6,4 +6,14 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+  app: {
+    head: {
+      script: [
+        {
+          src: 'https://api-maps.yandex.ru/2.1/?apikey=8e8d7319-01a6-4f51-bcb9-23ce95f251b9&lang=ru_RU',
+          async: true
+        }
+      ]
+    }
+  }
 })
