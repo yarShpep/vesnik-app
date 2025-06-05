@@ -1,2 +1,15 @@
 databaseChangeLog:
   - include:
+      file: db/changelog/changeset/0001_create_table_region.sql
+  - include:
+      file: db/changelog/changeset/0002_create_table_district.sql
+  - include:
+      file: db/changelog/changeset/0003_create_table_city.sql
+  - include:
+      file: db/changelog/changeset/0004_create_table_incident_type.sql
+  - include:
+      file: db/changelog/changeset/0005_create_table_chairman.sql
+  - include:
+      file: db/changelog/changeset/0006_create_table_location.sql
+  - include:
+      file: db/changelog/changeset/0007_create_table_incident.sql
