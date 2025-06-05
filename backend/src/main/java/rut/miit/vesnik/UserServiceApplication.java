@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 @EnableFeignClients("rut.miit.vesnik.client")
 @OpenAPIDefinition(
         info = @Info(
-                title = "User Service",
+                title = "Vesnik Service",
                 version = "1.0.0")
 )
 public class UserServiceApplication {
